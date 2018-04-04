@@ -4,7 +4,7 @@
     "description": "",
     "main": "listings.js",
     "scripts": {
-        "test": "npx cypress run --browser chrome"
+        "test": "npx cypress open"
     },
     "repository": {
         "type": "git",
@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/gSchool/Build-an-app-using-component-based-architecture#readme",
     "devDependencies": {
-        "cypress": "^1.4.1"
+        "cypress": "^2.1.0",
+        "webpack-dev-server": "^2.7.1"
     }
 }
