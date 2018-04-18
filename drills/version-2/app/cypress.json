@@ -1,0 +1,10 @@
+{
+	"baseUrl": "http://localhost:8080",
+	"integrationFolder": "tests",
+	"screenshotsFolder": "tests/screenshots",
+	"videosFolder": "tests/recordings",
+	"fixturesFolder": false,
+	"pluginsFile": false,
+	"supportFile": false,
+	"chromeWebSecurity": true
+}
