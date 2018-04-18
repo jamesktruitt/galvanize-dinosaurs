@@ -23,7 +23,8 @@
 3. Navigate to this folder and run `npm test`.
 
 #### Deployed Link
-[Firebase Deployed Link]('https://dino-app-version-2.firebaseapp.com/')
+[Firebase Deployed Link](https://dino-app-version-2.firebaseapp.com/)
+
 
 #### Framework of choice
 Vue
