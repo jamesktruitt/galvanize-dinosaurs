@@ -1,22 +1,24 @@
 <template>
-  <div>
+  <div id='input-form'>
+    <label>Apply Here:</label>
     <form id='application-input'>
-      <label>Apply Here:</label>
-      <textarea id="application-text" cols="100" rows="8" v-model='applicationText'></textarea>
-      <input id='submit' value='Submit' type="submit" @click.prevent.reset='submitApplication'/>
+      <textarea id='application-text' cols="100" rows="8" v-model='applicationText'/>/<br>
+      <section>
+        <input id='submit' value='Submit' type="submit" @click.prevent='submitApplication'/>
+      </section>
     </form>
     <p id='message'> {{ message }} </p>
   </div>
 </template>
 
 <script>
+import Preview from './Preview'
+
 export default {
   name: 'InputForm',
-  props: {
-    getText: {
-      type: Function,
-      required: true
-    }
+  props: ['getText'],
+  components: {
+    Preview
   },
   data() {
     return {
@@ -25,25 +27,20 @@ export default {
     }
   },
   watch: {
-    applicationText (newText) {
+    applicationText(newText) {
       this.getText(newText)
     }
   },
   methods: {
     submitApplication() {
       this.message = 'Your application was submitted!'
-    }
+    },
   }
 }
 </script>
 
 <style scoped>
-#application-input {
-  margin-left: 8em;
-  color: #1B997A;
-}
-
-form  {
-  display: block;
+#input-form {
+  color: #1B997A;  
 }
 </style>

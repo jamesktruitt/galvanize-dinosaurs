@@ -1,23 +1,22 @@
 <template>
-  <div>
     <section id='job-details'>
       <h2>Job Details</h2>
-      <h4>Demolitions Manager</h4>
-      <p>Please destroy things for us.</p>
+      <h4>{{ jobDetails.title }}</h4>
+      <p>{{ jobDetails.description }}</p>
     </section>
-  </div>
 </template>
 
 <script>
-  export default {
-    name: 'JobDetails'
-  }
+export default {
+  name: 'JobDetails',
+  props: ['jobDetails']
+}
 </script>
 
 <style scoped>
 #job-details {
-  margin-left: 8em;
   color: #1B997A;
+  padding:
 }
 
 </style>

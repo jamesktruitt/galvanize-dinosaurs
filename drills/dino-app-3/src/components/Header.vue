@@ -1,22 +1,22 @@
 <template>
-  <div id='Header'>
+  <div id='header'>
     <img id='header-img' src="../assets/g-dino.png" alt='Dinosaur Logo'>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Header'
-  }
+export default {
+  name: 'Header'
+}
 </script>
 
 <style scoped>
-#Header {
+#header {
   grid-row: 1/ 2;
   display: grid;
   grid-template-columns: 25% 50% 15%;
   grid-template-rows: 50% 50%;
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
 #header-img {

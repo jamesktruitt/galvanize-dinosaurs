@@ -1,6 +1,6 @@
 <template>
   <div id='app'>
-      <TheHeader/>
+      <TheHeader/> Component
       <main>
         <TheJobList v-bind:jobListData='listingData'/>
         <TheJobForm v-bind:sendListing='postListing'/>
