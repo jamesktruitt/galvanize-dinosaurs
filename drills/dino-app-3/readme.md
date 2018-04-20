@@ -27,7 +27,7 @@
 
 #### Deployed Link
 
-[Firebase Deployed Link]('https://dino-app-version-3.firebaseapp.com/')
+[Firebase Deployed Link](https://dino-app-version-3.firebaseapp.com/)
 
 #### Framework of choice
 
